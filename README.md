@@ -15,15 +15,15 @@ Kolam utilizes a "Split Architecture" to solve the Python GIL (Global Interprete
 ```mermaid
 graph TD
     subgraph "Control Plane (Python)"
-        A[FastAPI Server] -->|Polls Telemetry| B[Hardware Abstraction Layer (HAL)]
-        A -->|WebSocket| C[React Admin Dashboard]
-        B -->|Start/Stop Signals| D{Shared Memory Bridge}
+        A["FastAPI Server"] -->|Polls Telemetry| B["Hardware Abstraction Layer (HAL)"]
+        A -->|WebSocket| C["React Admin Dashboard"]
+        B -->|Start/Stop Signals| D{"Shared Memory Bridge"}
     end
 
     subgraph "Data Plane (C++ Native)"
-        D -- Atomic Reads --> E[Hybrid Engine Thread]
-        E -->|AVX2 Vector Ops| F[DSP Kernel (LDPC/FFT)]
-        F -->|eCPRI Framing| G[Virtual Fronthaul]
+        D -- Atomic Reads --> E["Hybrid Engine Thread"]
+        E -->|AVX2 Vector Ops| F["DSP Kernel (LDPC/FFT)"]
+        F -->|eCPRI Framing| G["Virtual Fronthaul"]
         G -- Watchdog Heartbeat --> D
     end
 
