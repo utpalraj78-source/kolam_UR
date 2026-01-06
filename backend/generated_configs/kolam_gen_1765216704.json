@@ -1,0 +1,17 @@
+{
+    "symmetry": "radial",
+    "randomness": 2.0,
+    "k": 10,
+    "seed": 344646093,
+    "mod": 256,
+    "bits_per_cell": 4,
+    "min_hops": 10,
+    "layout": "Square grid (no rotate)",
+    "curve_color": "#800000",
+    "dot_color": "#000000",
+    "grid_color": null,
+    "key": null,
+    "ctr": 0,
+    "t": 0,
+    "multi_color_palette": "[\"#00ffff\"]"
+}

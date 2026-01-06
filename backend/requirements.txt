@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+numpy
+pydantic
+matplotlib
+Pillow
+sqlalchemy
+psycopg2-binary
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+websockets
+python-dotenv

@@ -1,0 +1,32 @@
+﻿{
+    "strategy":  "bits_chunk",
+    "channels":  64,
+    "bits_per_hop":  6,
+    "matrix_nibble":  [
+                          [
+                              5,
+                              6,
+                              9
+                          ],
+                          [
+                              10,
+                              5,
+                              10
+                          ],
+                          [
+                              5,
+                              10,
+                              6
+                          ]
+                      ],
+    "bits_length":  36,
+    "hops_sequence":  [
+                          21,
+                          41,
+                          41,
+                          26,
+                          22,
+                          38
+                      ],
+    "length":  6
+}

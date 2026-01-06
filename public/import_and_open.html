@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Import Kolam to LocalStorage and Open App</title>
+    <style>body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:2rem;background:#0f172a;color:#e6eef8} .card{background:#0b1220;padding:1rem;border-radius:8px;max-width:880px;margin:0 auto} pre{background:#071025;padding:0.75rem;border-radius:6px;overflow:auto}</style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Import Kolam and Open App</h1>
+      <p>This page will POST a sample JSON to the backend <code>/generate-from-json</code>, store the response in <code>localStorage</code>, then call <code>/matrix-to-hops</code> and store that result. Finally it navigates to the app <code>/kolam-from-json</code>.</p>
+      <p>If you see CORS errors, ensure the backend is running at <code>http://127.0.0.1:8000</code>.</p>
+      <div id="log"></div>
+      <pre id="debug"></pre>
+    </div>
+
+    <script>
+      (async function(){
+        const log = (m) => { const d = document.getElementById('log'); d.innerText = m + '\n' + d.innerText };
+        const dbg = (s) => { document.getElementById('debug').innerText = s };
+
+        // Embedded sample payload (generated from project file)
+        const sample = {
+  "matrix_raw": [
+    [[0,1,0,1],[0,1,1,0],[1,0,0,1]],
+    [[1,0,1,0],[0,1,0,1],[1,0,1,0]],
+    [[0,1,0,1],[1,0,1,0],[0,1,1,0]]
+  ],
+  "layout": "Square grid (no rotate)"
+};
+
+        try {
+          log('Posting sample to /generate-from-json...');
+          dbg(JSON.stringify(sample, null, 2));
+          const genResp = await fetch('http://127.0.0.1:8000/generate-from-json', {
+            method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(sample)
+          });
+          if(!genResp.ok) throw new Error('generate-from-json failed: ' + genResp.status + ' ' + await genResp.text());
+          const genJson = await genResp.json();
+          log('Received generate-from-json — saving to localStorage as "kolam_from_json_response"');
+          localStorage.setItem('kolam_from_json_response', JSON.stringify(genJson));
+
+          // Prepare matrix-to-hops payload
+          const payload = {};
+          if (genJson.matrix_nibble) payload.matrix_nibble = genJson.matrix_nibble;
+          else if (genJson.matrix_raw) payload.matrix_raw = genJson.matrix_raw;
+          payload.channels = 64;
+          payload.bits_per_hop = 6;
+          payload.strategy = 'bits_chunk';
+          payload.msb_first = true;
+
+          log('Posting matrix to /matrix-to-hops...');
+          const hopsResp = await fetch('http://127.0.0.1:8000/matrix-to-hops', {
+            method: 'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)
+          });
+          if(!hopsResp.ok) throw new Error('matrix-to-hops failed: ' + hopsResp.status + ' ' + await hopsResp.text());
+          const hopsJson = await hopsResp.json();
+          log('Received hops — saving to localStorage as "kolam_matrix_to_hops"');
+          localStorage.setItem('kolam_matrix_to_hops', JSON.stringify(hopsJson));
+
+          // Also duplicate as B for comparison convenience
+          localStorage.setItem('kolam_matrix_to_hops_b', JSON.stringify(hopsJson));
+
+          log('Done — opening app kolam-from-json page');
+          setTimeout(() => { window.location.href = '/kolam-from-json'; }, 800);
+        } catch (e) {
+          console.error(e);
+          dbg('ERROR: ' + e);
+          log('Error encountered — check console for details');
+        }
+
+      })();
+    </script>
+  </body>
+</html>
