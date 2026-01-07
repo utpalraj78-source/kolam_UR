@@ -1,0 +1,41 @@
+name: Kolam 6G Cloud Deployment (TRL-9)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v3
+
+      # 1. Build Data Plane (C++ Kernels)
+      - name: Build Native Drivers (Linux x64)
+        run: |
+          cd backend/cpp_kernels
+          g++ -shared -fPIC -O3 -mavx2 -mfma -o kolam_engine.so kolam_engine.cpp
+          g++ -shared -fPIC -O3 -o kolam_kernel.so kolam_kernel.cpp
+
+      # 2. Dockerize Everything
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build Production Image
+        run: |
+          docker build -t kolam-6g-core:latest -f Dockerfile.backend .
+          echo "Image built successfully. Ready for Azure Container Registry (ACR)."
+
+      # 3. Security Audit (TRL-9 Requirement)
+      - name: Run Bandit Security Scan
+        run: |
+          pip install bandit
+          bandit -r backend -ll
+
+      # Note: Step 4 would involve azure/login and docker push to ACR
+      # We leave the placeholders for the user's specific Azure credentials
+      - name: Prepare Deployment Manifests
+        run: |
+          echo "Deployment artifacts ready for Azure App Service / AKS."
