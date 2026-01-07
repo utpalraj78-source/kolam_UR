@@ -1,0 +1,31 @@
+# Build stage for C++ kernels and Python backend
+FROM python:3.10-slim-bullseye
+
+# Install system dependencies for C++ compilation
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    g++ \
+    make \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy requirements and install
+COPY backend/requirements.txt ./backend/requirements.txt
+RUN pip install --no-cache-dir -r backend/requirements.txt
+
+# Copy the rest of the application
+COPY . .
+
+# Compile C++ Kernels for Linux (creates .so files)
+RUN make all
+
+# Expose backend port
+EXPOSE 8081
+
+# Set the environment
+ENV ENV=production
+ENV PYTHONPATH=/app/backend
+
+# Run the backend
+CMD ["python", "backend/run_backend.py"]

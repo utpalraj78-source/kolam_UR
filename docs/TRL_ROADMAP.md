@@ -39,10 +39,20 @@ The Kolam 6G Lab has progressed through several distinct stages of engineering m
     *   Added Real-Time **GFLOPS Telemetry**.
 *   **Result**: The software is now efficient enough to run on COTS (Commercial Off-The-Shelf) servers without specialized FPGA hardware, aligning with the **vRAN / Open RAN** trend.
 
-## TRL 8/9: Field Deployment (Future Work)
-**Status:** *In Progress / Hardware Dependent*
+## TRL-8: Final System Validation (Containerization & Orchestration)
+**Status:** *Completed (Solution: Docker & Docker-Compose)*
 
-To reach TRL 8, the following hardware dependencies must be met:
+*   **The Upgrade**: Moving from "It works on my machine" to "It works everywhere."
+*   **Technical Achievement**:
+    *   **Dockerfile.backend**: Implemented a multi-stage build that compiles C++ kernels in a Linux/GNU environment.
+    *   **Dockerfile.frontend**: Optimized Nginx-based delivery for the React dashboard.
+    *   **Docker-Compose**: Orchestrated the full stack with networking isolation.
+*   **Result**: The system is now cloud-ready and can be deployed to AWS/Azure/GCP as a virtualized O-DU (vDU).
+
+## TRL-9: Full Commercial Deployment (Final Stage)
+**Status:** *In Progress*
+
+To reach TRL-9, the following are required:
 1.  **Hardware PTP (IEEE 1588)**: Integration with a NIC (Network Interface Card) that has a hardware clock synced to GPS (Grandmaster Clock).
-2.  **DPDK (Data Plane Development Kit)**: Bypassing the Windows Kernel Network Stack to utilize polling-mode drivers for packet I/O.
+2.  **DPDK (Data Plane Development Kit)**: Bypassing the Linux Kernel Network Stack to utilize polling-mode drivers for 100Gbps+ packet I/O.
 3.  **Physical RF**: Replacing the "Simulation" output with a physical 10GbE Fiber connection to a Commercial-Off-The-Shelf (COTS) Radio Unit.

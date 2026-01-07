@@ -1,10 +1,10 @@
-# Kolam 6G Lab: Industry-Ready O-RAN Prototype (TRL-7)
+# Kolam 6G Lab: Industry-Ready O-RAN Prototype (TRL-8)
 
-![Kolam 6G Banner](https://img.shields.io/badge/Status-Industrial%20Prototype-00cc00?style=for-the-badge) ![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-3.0-blue?style=for-the-badge)
+![Kolam 6G Banner](https://img.shields.io/badge/Status-Containerized%20System-00cc00?style=for-the-badge) ![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-4.0-blue?style=for-the-badge)
 
 The **Kolam 6G Lab** is a high-fidelity telecommunications simulation platform designed to validate **Next-Generation Radio Access Network (NG-RAN)** architectures. Unlike traditional simulations, Kolam implements a **Hybrid Control/Data Plane** architecture that mirrors commercial 5G/6G Distributed Units (DUs) found in Ericsson and Nokia networks.
 
-It features a custom **C++ Hybrid Engine** utilizing **AVX2 SIMD Intrinsics** to achieve **8x Compute Density**, enabling real-time **O-RAN Split 7.2x** eCPRI framing on standard hardware.
+It features a custom **C++ Hybrid Engine** utilizing **AVX2 SIMD Intrinsics** to achieve **8x Compute Density**, enabling real-time **O-RAN Split 7.2x** eCPRI framing on standard hardware. Now fully **Containerized (TRL-8)** for cloud-native deployment.
 
 ---
 
@@ -71,13 +71,16 @@ sequenceDiagram
 
 ## 🛠️ Getting Started
 
-### Prerequisites
-*   **OS**: Windows 10/11 (Architecture relies on `kernel32.dll` threads)
-*   **Python**: 3.10+
-*   **Node.js**: 18+
-*   **Compiler**: MinGW G++ (with AVX2 support)
+### Cloud-Native Deployment (TRL-8)
+The easiest way to run the entire system is using **Docker Compose**. This ensures all kernels are compiled in a standard Linux environment.
 
-### Installation Guide
+```bash
+docker-compose up --build
+```
+*   **Frontend**: `http://localhost:8080`
+*   **Backend**: `http://localhost:8081`
+
+### Local Development Installation
 
 1.  **Clone the Repository**
     ```bash

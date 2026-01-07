@@ -1,71 +1,29 @@
 version: '3.8'
 
 services:
-  # 1. The Backend (Business Logic & Simulation)
-  # 1. Central Unit (CU) - Control Plane & Admin
-  cu_node:
+  backend:
     build:
       context: .
-      dockerfile: Dockerfile
-    container_name: kolam_cu
+      dockerfile: Dockerfile.backend
+    container_name: kolam-backend
     ports:
       - "8081:8081"
     environment:
-      - DATABASE_URL=postgresql://kolam_user:kolam_secret_pass@db:5432/kolam_db
-      - SECRET_KEY=${SECRET_KEY:-production-secret-loaded-from-env}
-      - ORAN_LAYER=CU
-    depends_on:
-      - db
-      - redis
-    networks:
-      - kolam_net
-
-  # 2. Distributed Unit (DU) - Data Plane & Kolam Logic
-  du_node:
-    image: kolam_cu:latest # Reuse build
-    container_name: kolam_du
-    environment:
-      - DATABASE_URL=postgresql://kolam_user:kolam_secret_pass@db:5432/kolam_db
-      - SECRET_KEY=${SECRET_KEY:-production-secret-loaded-from-env}
-      - ORAN_LAYER=DU
-      - CUDA_VISIBLE_DEVICES=0 # Access to GPU
-    networks:
-      - kolam_net
-
-  # 3. Radio Unit (RU) - RF Front End
-  ru_node:
-    image: kolam_cu:latest
-    container_name: kolam_ru
-    environment:
-      - ORAN_LAYER=RU
-    networks:
-      - kolam_net
-
-  # 2. Database (PostgreSQL - Industry Standard)
-  db:
-    image: postgres:15-alpine
-    container_name: kolam_db
-    environment:
-      - POSTGRES_USER=kolam_user
-      - POSTGRES_PASSWORD=kolam_secret_pass
-      - POSTGRES_DB=kolam_db
-    volumes:
-      - pg_data:/var/lib/postgresql/data
-    networks:
-      - kolam_net
+      - ENV=production
+      - DATABASE_URL=sqlite:///./kolam.db
     restart: always
 
-  # 3. Cache / Message Broker (Redis - for async tasks)
-  redis:
-    image: redis:7-alpine
-    container_name: kolam_redis
-    networks:
-      - kolam_net
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: kolam-frontend
+    ports:
+      - "8080:80" # Maps host 8080 to container Nginx port 80
+    depends_on:
+      - backend
     restart: always
 
 networks:
-  kolam_net:
-    driver: bridge
-
-volumes:
-  pg_data:
+  default:
+    name: kolam-net
