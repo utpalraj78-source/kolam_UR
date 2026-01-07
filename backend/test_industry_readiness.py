@@ -3,10 +3,10 @@ import sys
 import os
 import numpy as np
 
-# Ensure backend and features are importable
-sys.path.append(os.path.join(os.getcwd(), 'backend'))
+# Ensure parent directory is importable
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from backend.hardware_drivers import FPGADriver, CUDADriver, SIMCardReader
+from hardware_drivers import FPGADriver, CUDADriver, SIMCardReader
 
 def test_drivers():
     print("Testing Hardware Abstraction Layer (HAL)...")
