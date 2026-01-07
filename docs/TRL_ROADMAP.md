@@ -49,6 +49,16 @@ The Kolam 6G Lab has progressed through several distinct stages of engineering m
     *   **Docker-Compose**: Orchestrated the full stack with networking isolation.
 *   **Result**: The system is now cloud-ready and can be deployed to AWS/Azure/GCP as a virtualized O-DU (vDU).
 
+## TRL-8.5: Industrial Observability (Product Proximity)
+**Status:** *Completed (Solution: Prometheus & JSON Logging)*
+
+*   **The Upgrade**: Moving from simple UI updates to Enterprise-grade monitoring.
+*   **Technical Achievement**:
+    *   **Prometheus Exposer**: Added a `/metrics` Scrape Target for real-time GFLOPS/Power/Throughput tracking.
+    *   **Structured JSON Logging**: Implemented `IndustrialJsonFormatter` to generate machine-readable logs for ELK/ELK stack.
+    *   **Heartbeat Auditing**: Added automatic telemetry injection into log streams every 5 seconds.
+*   **Result**: The system is now ready for a Network Operation Center (NOC) environment.
+
 ## TRL-9: Full Commercial Deployment (Final Stage)
 **Status:** *In Progress*
 

@@ -127,6 +127,10 @@ docker-compose up --build
 *   ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white) **TailwindCSS**: Utilitarian styling for "Cyberpunk" aesthetic.
 *   ![Recharts](https://img.shields.io/badge/Recharts-Data_Viz-FF6384?style=flat) **Recharts**: High-frequency telemetry graphing.
 
+### **Industrial Observability (TRL-8.5)**
+*   **Prometheus Target**: Live metrics available at `/api/telecom-admin/metrics`.
+*   **JSON-Structured Logs**: Located in `kolam_production.log` for ELK/Kibana ingestion.
+
 ---
 
 ## 📚 Documentation

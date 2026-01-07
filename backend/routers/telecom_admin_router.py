@@ -137,3 +137,11 @@ async def stop_digital_twin():
 async def get_digital_twin_stats():
     """Returns real-time counters from the C++/GPU Engines."""
     return digital_twin.stats
+
+@router.get("/metrics")
+async def get_prometheus_metrics():
+    """Exposes industrial-grade telemetry for Prometheus scraping."""
+    from prometheus_client import generate_latest, CONTENT_TYPE_LATEST
+    from fastapi import Response
+    return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
+

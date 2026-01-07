@@ -13,6 +13,16 @@ except ImportError:
     # Fallback if imports fail in some contexts
     from backend.hardware_drivers import FPGADriver, CUDADriver, CPPEngine
 
+from industrial_logger import industrial_logger
+from prometheus_client import Gauge, generate_latest, CONTENT_TYPE_LATEST
+
+# Prometheus Metrics Definition
+PROM_THROUGHPUT = Gauge('kolam_throughput_mbps', 'Real-time 6G user-plane throughput')
+PROM_LATENCY = Gauge('kolam_latency_us', 'Data plane execution latency in microseconds')
+PROM_GFLOPS = Gauge('kolam_compute_gflops', 'Vectorized DSP compute density in GFLOPS')
+PROM_POWER = Gauge('kolam_power_watts', 'Estimated core power consumption in Watts')
+PROM_UES = Gauge('kolam_active_ues', 'Number of active User Equipments connected')
+
 class DigitalTwinManager:
     def __init__(self):
         self.running = False
@@ -126,6 +136,24 @@ class DigitalTwinManager:
                     
                     if self.stats["avx_active"]:
                          self.stats["c_kernel_status"] = "ACTIVE (AVX2-512 VECTORIZED)"
+                    
+                    # --- PUSH TO PROMETHEUS ---
+                    PROM_THROUGHPUT.set(self.stats["throughput_mbps"])
+                    PROM_LATENCY.set(self.stats["latency_us"])
+                    PROM_GFLOPS.set(self.stats["compute_gflops"])
+                    PROM_POWER.set(self.stats["estimated_watts"])
+                    PROM_UES.set(self.stats["active_ues"])
+
+                    # --- STRUCTURED LOGGING ---
+                    # Log critical stats every 50 iterations (~5 seconds)
+                    if real_stats.get("watchdog", 0) % 50 == 0:
+                        industrial_logger.info("Operational Heartbeat", extra={
+                            "telemetry": {
+                                "gflops": self.stats["compute_gflops"],
+                                "mbps": self.stats["throughput_mbps"],
+                                "watts": self.stats["estimated_watts"]
+                            }
+                        })
                     
                 else:
                     # Fallback simulation if loading failed
