@@ -14,7 +14,7 @@ def vae_encode_to_json(M, model_path="backend/kolam_vae.pth"):
     # Load model
     k = M.shape[0]
     model = KolamVAE(k=k, latent_dim=32)
-    model.load_state_dict(torch.load(model_path))
+    model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'), weights_only=True))  # nosec B614
     model.eval()
     
     # Preprocess M

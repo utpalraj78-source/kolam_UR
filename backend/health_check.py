@@ -7,7 +7,7 @@ def check_health():
     url = "http://localhost:8081/"
     for i in range(5):
         try:
-            with urllib.request.urlopen(url) as response:
+            with urllib.request.urlopen(url) as response:  # nosec B310
                 if response.status == 200:
                     print("Backend is HEALTHY")
                     return
