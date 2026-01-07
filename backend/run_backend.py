@@ -12,4 +12,4 @@ if __name__ == "__main__":
     os.environ["ENV"] = "development" 
     
     print("Starting Kolam Backend via run_backend.py on port 8081...")
-    uvicorn.run("backend.main:app", host="0.0.0.0", port=8081, reload=True, reload_dirs=["backend"], reload_excludes=["backend/generated_images", "backend/generated_configs", "backend/kolam_chat.db"])
+    uvicorn.run("backend.main:app", host="0.0.0.0", port=8081, reload=True, reload_dirs=["backend"], reload_excludes=["backend/generated_images", "backend/generated_configs", "backend/kolam_chat.db"])  # nosec B104

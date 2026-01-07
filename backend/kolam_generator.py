@@ -895,13 +895,13 @@ def generate_from_model(model_path="kolam_vae.pth", latent_vector=None, k=15):
     # Load model
     model = KolamVAE(k=k, latent_dim=32)
     if os.path.exists(model_path):
-        model.load_state_dict(torch.load(model_path))
+        model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'), weights_only=True)) # nosec B614
     else:
         # If path not found, try looking in same dir
         cur_dir = os.path.dirname(os.path.abspath(__file__))
         path2 = os.path.join(cur_dir, model_path)
         if os.path.exists(path2):
-            model.load_state_dict(torch.load(path2))
+            model.load_state_dict(torch.load(path2, map_location=torch.device('cpu'), weights_only=True)) # nosec B614
         else:
             raise FileNotFoundError(f"Model not found at {model_path}")
             
