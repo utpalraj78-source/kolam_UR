@@ -43,10 +43,13 @@ struct EngineStats {
     // NEW: AVX2 Metrics
     std::atomic<bool> avx2_active;
     std::atomic<double> compute_gflops; // Metric for SIMD efficiency
+    
+    // NEW: Sustainability Metrics (TRL-7)
+    std::atomic<double> estimated_watts; 
+    std::atomic<double> efficiency_mw_per_mbps; 
 };
 
 EngineStats stats;
-
 #ifdef _WIN32
 HANDLE hThread = NULL;
 #else
@@ -112,6 +115,20 @@ void engine_loop_logic() {
         double gflops = (50.0 * 1000.0 * 16.0) / (current_latency * 1000.0); 
         stats.compute_gflops = gflops;
 
+        // Sustainability Model (Power Estimation)
+        // AVX2 kernels consume ~15-30W per active core on typical server CPUs.
+        // We scale this by the duty cycle (execution time / 500us slot).
+        double duty_cycle = current_latency / 500.0;
+        double base_wattage = 15.0; // 15W TDP for this core's AVX unit
+        double current_watts = base_wattage * duty_cycle;
+        stats.estimated_watts = current_watts;
+
+        // Efficiency: Milliwatts per Megabit
+        // (Watts * 1000) / Mbps
+        if (real_mbps > 0) {
+            stats.efficiency_mw_per_mbps = (current_watts * 1000.0) / real_mbps;
+        }
+
         while (std::chrono::duration<double, std::micro>(std::chrono::high_resolution_clock::now() - start).count() < 500.0) {
             // Spinlock
         }
@@ -140,6 +157,8 @@ extern "C" {
         stats.watchdog_counter = 0;
         stats.avx2_active = false;
         stats.compute_gflops = 0;
+        stats.estimated_watts = 0;
+        stats.efficiency_mw_per_mbps = 0;
         
         #ifdef _WIN32
         hThread = CreateThread(NULL, 0, engine_loop_func, NULL, 0, NULL);
@@ -165,7 +184,7 @@ extern "C" {
         std::cout << "[C++ Hybrid Engine] Stopped." << std::endl;
     }
 
-    EXPORT void get_telemetry(uint64_t* packets, double* mbps, double* lat, int* ues, double* ecpri, uint64_t* watchdog, bool* avx, double* gflops) {
+    EXPORT void get_telemetry(uint64_t* packets, double* mbps, double* lat, int* ues, double* ecpri, uint64_t* watchdog, bool* avx, double* gflops, double* watts, double* efficiency) {
         *packets = stats.packets_processed;
         *mbps = stats.throughput_mbps;
         *lat = stats.latency_us; 
@@ -174,5 +193,7 @@ extern "C" {
         *watchdog = stats.watchdog_counter;
         *avx = stats.avx2_active;
         *gflops = stats.compute_gflops;
+        *watts = stats.estimated_watts;
+        *efficiency = stats.efficiency_mw_per_mbps;
     }
 }

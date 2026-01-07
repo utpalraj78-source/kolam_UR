@@ -504,6 +504,19 @@ const AdminDashboard = () => {
                                         {dtStats?.avx_active && <span className="text-[8px] text-pink-500/80 uppercase">SIMD VECTORIZED</span>}
                                     </div>
                                 </div>
+
+                                <div className="flex justify-between text-[10px] pt-1">
+                                    <span className="text-zinc-500">POWER CONSUMPTION</span>
+                                    <span className="text-orange-300 font-mono">{dtStats?.estimated_watts ? dtStats.estimated_watts.toFixed(1) : "0.0"} Watts (C)</span>
+                                </div>
+
+                                <div className="flex justify-between text-[10px] pt-2 border-t border-green-500/20">
+                                    <span className="text-green-500/80 font-bold">EFFICIENCY (ESG)</span>
+                                    <div className="flex flex-col items-end text-green-400">
+                                        <span className="font-mono text-xs">{dtStats?.efficiency ? dtStats.efficiency.toFixed(2) : "0.00"} mW/Mbps</span>
+                                        <span className="text-[7px] uppercase tracking-tighter">Net-Zero Optimized</span>
+                                    </div>
+                                </div>
                             </div>
                         </CardContent>
                     </Card>

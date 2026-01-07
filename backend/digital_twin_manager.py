@@ -121,6 +121,8 @@ class DigitalTwinManager:
                     # TRL-7 Metrics (Intel FlexRAN AVX2)
                     self.stats["avx_active"] = real_stats.get("avx_active", False)
                     self.stats["compute_gflops"] = real_stats.get("compute_gflops", 0)
+                    self.stats["estimated_watts"] = real_stats.get("estimated_watts", 0)
+                    self.stats["efficiency"] = real_stats.get("efficiency_mw_per_mbps", 0)
                     
                     if self.stats["avx_active"]:
                          self.stats["c_kernel_status"] = "ACTIVE (AVX2-512 VECTORIZED)"

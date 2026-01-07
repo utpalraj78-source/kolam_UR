@@ -172,7 +172,9 @@ class CPPEngine:
                 ctypes.POINTER(ctypes.c_double), # ecpri_mbps
                 ctypes.POINTER(ctypes.c_uint64), # watchdog
                 ctypes.POINTER(ctypes.c_bool),   # avx_active
-                ctypes.POINTER(ctypes.c_double)  # gflops
+                ctypes.POINTER(ctypes.c_double), # gflops
+                ctypes.POINTER(ctypes.c_double), # watts
+                ctypes.POINTER(ctypes.c_double)  # efficiency
             ]
         else:
             print("[HAL] C++ Hybrid Engine DLL not found/loadable.")
@@ -197,6 +199,8 @@ class CPPEngine:
         watchdog = ctypes.c_uint64(0)
         avx = ctypes.c_bool(False)
         gflops = ctypes.c_double(0.0)
+        watts = ctypes.c_double(0.0)
+        eff = ctypes.c_double(0.0)
         
         self._lib.get_telemetry(
             ctypes.byref(packets), 
@@ -206,7 +210,9 @@ class CPPEngine:
             ctypes.byref(ecpri),
             ctypes.byref(watchdog),
             ctypes.byref(avx),
-            ctypes.byref(gflops)
+            ctypes.byref(gflops),
+            ctypes.byref(watts),
+            ctypes.byref(eff)
         )
         
         return {
@@ -217,5 +223,7 @@ class CPPEngine:
             "ecpri_mbps": ecpri.value,
             "watchdog": watchdog.value,
             "avx_active": avx.value,
-            "compute_gflops": gflops.value
+            "compute_gflops": gflops.value,
+            "estimated_watts": watts.value,
+            "efficiency_mw_per_mbps": eff.value
         }
