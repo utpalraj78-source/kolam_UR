@@ -150,6 +150,18 @@ class CUDADriver:
         # print(f"[CUDA] Executed Kernel on {data.size} items via {self.device_name}")
         return d_output.copy_to_host()
 
+class SIMCardReader:
+    """
+    Interface for Physical Smart Card Readers (ISO-7816).
+    Used for hardware-based identity verification of subscribers.
+    """
+    def __init__(self):
+        self.reader_present = False
+        print("[HAL] Scanning for PC/SC Smart Card Readers...")
+        # In a real TRL-9 system, we would use 'pyscard' here.
+        # For current lab readiness, we simulate the interface.
+
+
 class CPPEngine:
     """
     Interface for the 'Hybrid C++ Engine'.
