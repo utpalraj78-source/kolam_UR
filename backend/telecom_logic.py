@@ -722,15 +722,24 @@ class ORAN_RadioUnit_RU:
     """Wrapper for the Physical Radio Unit (RU) Hardware."""
     def __init__(self):
         self.driver = FPGADriver()
+        # Level 3: SDR Integration
+        from hardware_drivers import SDRInterface
+        self.sdr = SDRInterface()
         self.gain = 30 # dB
         self.temperature = 45 # Celsius
     
     def process_iq_samples(self, iq_data: np.ndarray):
         """Low-PHY functions: FFT/IFFT and Digital-to-Analog."""
-        # Hardware Offloading
+        # 1. Hardware Offloading (FPGA)
         success = self.driver.push_iq_stream(iq_data.tolist())
         mode = "FPGA_HARDWARE" if not self.driver.simulated else "SOFT_SIMULATION"
         print(f"[RU] Running Low-PHY (FFT/IFFT) on {mode} ...")
+        
+        # 2. SDR Transmission (HackRF)
+        # Convert NumPy complex array to standard Python list for portability, or use directly
+        # The bridge expects complex samples (List or Array)
+        if self.sdr:
+            self.sdr.transmit_stream(iq_data.tolist())
         
         return iq_data * (10 ** (self.gain / 20))
 

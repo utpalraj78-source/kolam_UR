@@ -1,0 +1,478 @@
+----------------------------------------------------------------
+6G-KOLAM: CLEAN IDENTITY BROADCAST (NAME ONLY)
+----------------------------------------------------------------
+[HackRF] Detected tool at: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[*] Targeting Channel 6 (2437.0 MHz)
+[HackRF] Saved 548000 samples to C:\Users\Utpal\Desktop\KOLAM\kolam_UR-main\clean_id.c8
+[*] Broadcasting IDENTITY: KOLAM_6G_CORE
+[*] Checked file: C:\Users\Utpal\Desktop\KOLAM\kolam_UR-main\clean_id.c8 Size: 1096000
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.
+[HackRF] Errors: hackrf_open() failed: HackRF not found (-5)
+
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Failed: Command '['C:\\Users\\Utpal\\radioconda\\Library\\bin\\hackrf_transfer.exe', '-t', 'C:\\Users\\Utpal\\Desktop\\KOLAM\\kolam_UR-main\\clean_id.c8', '-f', '2437000000', '-s', '10000000', '-a', '1', '-x', '47']' returned non-zero exit status 1.

@@ -27,6 +27,7 @@ export const Navigation = () => {
     { to: "/hop-compare", label: "Hop Analysis", icon: BarChart4, protected: true, roles: ['telecom'] },
     { to: "/hopping-comparison", label: "AFH DEMONSTRATION", icon: Activity, protected: true, roles: ['telecom'] },
     { to: "/telecom-admin", label: "6G ADMIN LAB", icon: Cpu, protected: true, roles: ['telecom'] },
+    { to: "/6g-security-lab", label: "6G SECURITY LAB", icon: ShieldCheck, protected: true, roles: ['telecom'] },
     { to: "/telecom-docs", label: "6G TECH DOCS", icon: BookOpen, protected: true, roles: ['telecom'] },
 
     // KCaptcha

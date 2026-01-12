@@ -1,6 +1,7 @@
 version: '3.8'
 
 services:
+  # KOLAM-6G Backend Service (FastAPI + Signal Engine)
   backend:
     build:
       context: .
@@ -8,20 +9,30 @@ services:
     container_name: kolam-backend
     ports:
       - "8081:8081"
+    volumes:
+      - ./research_data:/app/research_data
     environment:
       - ENV=production
-      - DATABASE_URL=sqlite:///./kolam.db
+      - DATABASE_URL=sqlite:///./research_data/kolam.db
+    # Hardware passthrough (Works on Linux Hosts)
+    # On Windows, you must run hackrf_transfer on the host or use a bridge
+    devices:
+      - "/dev/bus/usb:/dev/bus/usb"
+    privileged: true
     restart: always
 
+  # KOLAM-6G Frontend Service (Vite + React)
   frontend:
     build:
       context: .
       dockerfile: Dockerfile.frontend
     container_name: kolam-frontend
     ports:
-      - "8080:80" # Maps host 8080 to container Nginx port 80
+      - "8080:80"
     depends_on:
       - backend
+    environment:
+      - VITE_API_URL=http://localhost:8081
     restart: always
 
 networks:

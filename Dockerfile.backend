@@ -1,31 +1,39 @@
-# Build stage for C++ kernels and Python backend
+# KOLAM-6G Backend Dockerfile
+# Optimized for Research & Industry Prototyping
+
 FROM python:3.10-slim-bullseye
 
-# Install system dependencies for C++ compilation
+# 1. Install System Dependencies
+# Includes build-essential for C++ Kernels and hackrf for hardware control
 RUN apt-get update && apt-get install -y \
     build-essential \
-    g++ \
+    libusb-1.0-0-dev \
+    hackrf \
+    python3-dev \
+    pkg-config \
     make \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Copy requirements and install
-COPY backend/requirements.txt ./backend/requirements.txt
-RUN pip install --no-cache-dir -r backend/requirements.txt
+# 2. Install Python Dependencies
+# Using root requirements for simplicity in container
+COPY backend/requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the application
+# 3. Copy Application Code
 COPY . .
 
-# Compile C++ Kernels for Linux (creates .so files)
-RUN make all
+# 4. Compile Performance Kernels
+# Converts C++ logic into .so shared libraries for Python to call
+RUN make all || echo "Warning: Makefile failed, proceeding with pure python..."
 
-# Expose backend port
+# 5. Runtime Configuration
 EXPOSE 8081
-
-# Set the environment
 ENV ENV=production
-ENV PYTHONPATH=/app/backend
+ENV PYTHONPATH=/app/backend:/app
 
-# Run the backend
-CMD ["python", "backend/run_backend.py"]
+# 6. Start Server
+# Using uvicorn for high-concurrency FastAPI handling
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8081"]

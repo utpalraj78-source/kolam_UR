@@ -37,6 +37,7 @@ from routers.auth_router import router as auth_router
 from routers.kolam_history_router import router as kolam_history_router
 from routers.secure_chat_router import router as secure_chat_router
 from routers.telecom_admin_router import router as telecom_admin_router
+from features.SecurityLab.backend.router import router as security_lab_router
 
 app = FastAPI(title="Kolam FHSS Backend — Modular Architecture")
 
@@ -57,6 +58,7 @@ if oran_layer in ["ALL", "CU"]:
     app.include_router(history_router)
     app.include_router(telecom_admin_router) # Admin Dashboard usually in CU
     app.include_router(secure_chat_router) # App logic in CU
+    app.include_router(security_lab_router)
 
 if oran_layer in ["ALL", "DU"]:
     # Distributed Unit (High-PHY, Kolam Logic)

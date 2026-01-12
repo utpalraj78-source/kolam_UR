@@ -161,6 +161,37 @@ class SIMCardReader:
         # In a real TRL-9 system, we would use 'pyscard' here.
         # For current lab readiness, we simulate the interface.
 
+# -----------------------------------------------------------------------------
+# LEVEL 3: HACKRF SDR INTEGRATION
+# -----------------------------------------------------------------------------
+try:
+    from backend.hackrf_bridge import HackRFBridge
+except ImportError:
+    HackRFBridge = None
+
+class SDRInterface:
+    """
+    Interface for Software Defined Radio (HackRF One, BladeRF, etc.).
+    Uses the HackRFBridge to transmit Kolam-encrypted IQ streams.
+    """
+    def __init__(self):
+        self.bridge = None
+        if HackRFBridge:
+            self.bridge = HackRFBridge()
+        
+    def transmit_stream(self, iq_samples: List[complex]):
+        if self.bridge and self.bridge.available:
+            print("[HAL] Routing efficient IQ stream to HackRF...")
+            path = self.bridge.save_to_file(iq_samples)
+            self.bridge.transmit(os.path.basename(path))
+            return True
+        else:
+            print("[HAL] SDR hardware not detected. Generating .c8 file for review only.")
+            if self.bridge:
+                self.bridge.save_to_file(iq_samples)
+            return False
+
+
 
 class CPPEngine:
     """

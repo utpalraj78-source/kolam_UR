@@ -132,6 +132,14 @@ const HopCompare = () => {
     return () => clearInterval(interval);
   }, [isPlaying, speed, seqA.length, seqB.length]);
 
+  // Sync Hardware Transmission with Animation
+  useEffect(() => {
+    if (isPlaying && seqA[currentIndex] !== undefined) {
+      // Fire-and-forget transmission request
+      axios.post("/transmit-single-hop", { channel: seqA[currentIndex] }).catch(() => { });
+    }
+  }, [currentIndex, isPlaying, seqA]);
+
   // ---------------------------------------------------------------------------
   // Metrics calculation (Hamming, Jaccard, Collision Rate)
   // ---------------------------------------------------------------------------

@@ -1,0 +1,38 @@
+----------------------------------------------------------------
+6G-KOLAM HARDWARE THROUGHPUT BENCHMARK
+----------------------------------------------------------------
+[HackRF] Detected tool at: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[*] Configuration: 20.0 Msps | High-Entropy Kolam Stream
+[*] Generating 10000000 samples per iteration...
+[HackRF] Saved 10000000 samples to throughput_stress.c8
+
+[3] Executing Hardware-In-The-Loop Benchmark...
+    Starting high-speed bursts...
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Complete.
+[HAL] Numba Import Error: No module named 'numba'
+[HAL] Level 2 GPU features will be disabled.
+    >> Burst #1: 217.56 Mbps [Processing time: 0.735s]
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Complete.
+    >> Burst #2: 225.91 Mbps [Processing time: 0.708s]
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Complete.
+    >> Burst #3: 223.01 Mbps [Processing time: 0.717s]
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Complete.
+    >> Burst #4: 215.70 Mbps [Processing time: 0.742s]
+[HackRF] Transmitting via: C:\Users\Utpal\radioconda\Library\bin\hackrf_transfer.exe
+[HackRF] Transmission Complete.
+    >> Burst #5: 225.38 Mbps [Processing time: 0.710s]
+
+[FINAL REPORT]
+================================================================
+   HARDWARE DEVICE   : HackRF One (SDR)
+   TARGET SAMPLE RATE: 20.0 Msps
+   THEORETICAL LIMIT : 320.0 Mbps (Raw IQ)
+   MEASURED THROUGHPUT: 221.51 Mbps
+   PROTOCOL OVERHEAD : 30.8% (USB Latency)
+   VERDICT           : OPTIMAL
+================================================================
+This shows the actual bitrate being pushed through the radio.

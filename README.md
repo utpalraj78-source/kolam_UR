@@ -142,4 +142,4 @@ For deep engineering details, please refer to the `docs/` directory:
 *   [🛣️ TRL Roadmap](docs/TRL_ROADMAP.md)
 
 ---
-*© 2026 Kolam 6G Lab. All Rights Reserved.*
+

@@ -26,6 +26,7 @@ import TelecomAdmin from "@features/Telecom/frontend/admin";
 import TelecomDocumentation from "@features/Telecom/frontend/admin/TelecomDocumentation";
 import KCaptchaDocs from "@features/KolamCaptcha/frontend/Docs";
 import Payment from "@features/KolamCaptcha/frontend/Payment";
+import SecurityLab from "@features/SecurityLab/frontend";
 
 const queryClient = new QueryClient();
 
@@ -64,6 +65,7 @@ const App = () => (
                 <Route path="/telecom-docs" element={<ProtectedRoute><TelecomDocumentation /></ProtectedRoute>} />
                 <Route path="/kcaptcha-docs" element={<ProtectedRoute><KCaptchaDocs /></ProtectedRoute>} />
                 <Route path="/payment" element={<ProtectedRoute><Payment /></ProtectedRoute>} />
+                <Route path="/6g-security-lab" element={<ProtectedRoute><SecurityLab /></ProtectedRoute>} />
 
 
                 <Route path="*" element={<NotFound />} />
