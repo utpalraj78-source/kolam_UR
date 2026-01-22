@@ -6,11 +6,12 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: true,
+    host: "0.0.0.0",
     port: 8080,
     strictPort: true,
     hmr: {
-      host: 'localhost',
+      host: "localhost",
+      clientPort: 8080,
     },
     proxy: {
       "/generate": {
@@ -38,11 +39,7 @@ export default defineConfig(({ mode }) => ({
         changeOrigin: true,
         secure: false,
       },
-      "/kolam": {
-        target: "http://127.0.0.1:8081",
-        changeOrigin: true,
-        secure: false,
-      },
+
       "/ws": {
         target: "http://127.0.0.1:8081",
         changeOrigin: true,

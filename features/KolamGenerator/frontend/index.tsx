@@ -81,7 +81,7 @@ const KolamGenerator = () => {
   // Save kolam to database
   const saveToDatabase = async (generatedKeys: GenResponse, filename: string | null) => {
     if (!user) {
-      console.log("User not logged in, skipping database save");
+      // console.log("User not logged in, skipping database save");
       return;
     }
 
@@ -101,7 +101,7 @@ const KolamGenerator = () => {
 
       // Use backend API to save to SQLite database
       // Pass the filename (e.g. "kolam_gen_123.png") as the image path
-      console.log("Saving Kolam...", { API_BASE_URL, kolamParams, filename });
+      // console.log("Saving Kolam...", { API_BASE_URL, kolamParams, filename });
       await saveKolam(kolamParams, filename || undefined);
       toast.success("Kolam saved to history!");
     } catch (err: any) {

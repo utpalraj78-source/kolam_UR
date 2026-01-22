@@ -50,4 +50,9 @@ backend/.venv/
 *.o
 *.obj
 backend/cpp_kernels/*.dll
-backend/cpp_kernels/*.so
+
+# Documentation Generation
+scripts/generate_pdf_docs.py
+scripts/generate_pitch_pdf.py
+docs/SECURE_COMMUNICATION_PITCH.md
+*.pdf
