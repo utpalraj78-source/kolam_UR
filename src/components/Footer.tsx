@@ -12,7 +12,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative w-full border-t bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/40 py-10 mt-auto overflow-hidden">
+    <footer className="relative w-full border-t border-muted/20 bg-background/20 backdrop-blur-sm py-10 mt-auto overflow-hidden z-10">
       {/* Decorative background glow */}
       <div className="absolute -top-24 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />

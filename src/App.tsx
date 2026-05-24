@@ -28,8 +28,6 @@ import KCaptchaDocs from "@features/KolamCaptcha/frontend/Docs";
 import Payment from "@features/KolamCaptcha/frontend/Payment";
 import SecurityLab from "@features/SecurityLab/frontend";
 
-import { Footer } from "@/components/Footer";
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -74,7 +72,6 @@ const App = () => (
                 </Routes>
               </div>
             </div>
-            <Footer />
           </div>
         </BrowserRouter>
       </TooltipProvider>

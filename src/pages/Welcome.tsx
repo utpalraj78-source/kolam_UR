@@ -4,6 +4,8 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
+import { Footer } from "@/components/Footer";
+
 const ParticleCanvas = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -82,13 +84,13 @@ const ParticleCanvas = () => {
 
 const Welcome = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden flex flex-col justify-between">
       <ParticleCanvas />
 
       {/* Gradient glow background */}
       <div className="absolute inset-0 bg-gradient-glow opacity-50" />
 
-      <div className="relative z-10 container mx-auto px-6 pt-32 pb-20">
+      <div className="relative z-10 container mx-auto px-6 pt-32 pb-16 flex-grow flex flex-col justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -185,6 +187,8 @@ const Welcome = () => {
           ))}
         </motion.div>
       </div>
+
+      <Footer />
     </div>
   );
 };
