@@ -13,3 +13,4 @@ python-multipart
 pytest
 pytest-asyncio
 psycopg2-binary
+email-validator
