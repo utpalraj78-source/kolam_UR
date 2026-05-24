@@ -3,7 +3,10 @@
 ![Kolam 6G Banner](https://img.shields.io/badge/Status-Cloud--Ready%20Deployment-00cc00?style=for-the-badge) ![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge) ![Version](https://img.shields.io/badge/Version-5.0-blue?style=for-the-badge)
 ![CI/CD](https://github.com/utpalraj78-source/kolam_UR/actions/workflows/ci_pipeline.yml/badge.svg)
 
+🔗 **Live Demo:** [https://kolam-ur.netlify.app/](https://kolam-ur.netlify.app/)
+
 The **Kolam 6G Lab** is a high-fidelity telecommunications simulation platform designed to validate **Next-Generation Radio Access Network (NG-RAN)** architectures. Unlike traditional simulations, Kolam implements a **Hybrid Control/Data Plane** architecture that mirrors commercial 5G/6G Distributed Units (DUs) found in Ericsson and Nokia networks.
+
 
 It features a custom **C++ Hybrid Engine** utilizing **AVX2 SIMD Intrinsics** to achieve **8x Compute Density**, enabling real-time **O-RAN Split 7.2x** eCPRI framing on standard hardware. Now fully **Containerized (TRL-8)** for cloud-native deployment.
 
