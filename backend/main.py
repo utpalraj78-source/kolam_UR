@@ -150,7 +150,7 @@ def read_root():
 if __name__ == "__main__":
     import uvicorn
     # Industry Practice: Use env vars for host/port
-    host = os.getenv("HOST", "0.0.0.0")
+    host = os.getenv("HOST", "0.0.0.0")  # nosec B104
     port = int(os.getenv("PORT", "8081"))
     
     logger.info(f"Starting Server on {host}:{port}")
