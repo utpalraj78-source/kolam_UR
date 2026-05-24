@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { Zap, Lock, Building2 } from "lucide-react";
 import { login, register } from "@/api/auth";
 import { triggerAuthUpdate } from "@/utils/authEvents";
+import { KolamCaptchaWidget } from "@/components/KolamCaptchaWidget";
 
 export default function Auth() {
   const navigate = useNavigate();
@@ -21,6 +22,8 @@ export default function Auth() {
   const [username, setUsername] = useState("");
   const [companyName, setCompanyName] = useState("");
   const [loading, setLoading] = useState(false);
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+  const [captchaKey, setCaptchaKey] = useState(0); // increment to reset widget
   // Initialize role from URL or default to learner
   const [selectedRole, setSelectedRole] = useState(searchParams.get("role") || "learner");
 
@@ -34,6 +37,10 @@ export default function Auth() {
 
   const handleAuth = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!captchaVerified) {
+      toast.error("Please complete the Kolam CAPTCHA first.");
+      return;
+    }
     setLoading(true);
 
     try {
@@ -90,6 +97,9 @@ export default function Auth() {
     } catch (error: any) {
       console.error("Auth error:", error);
       toast.error(error?.response?.data?.detail || "Authentication failed");
+      // reset captcha on failure so user must solve it again
+      setCaptchaVerified(false);
+      setCaptchaKey(k => k + 1);
     } finally {
       setLoading(false);
     }
@@ -203,10 +213,17 @@ export default function Auth() {
                   minLength={6}
                 />
               </div>
+
+              {/* Kolam CAPTCHA — must be solved before submit */}
+              <KolamCaptchaWidget
+                key={captchaKey}
+                onVerified={() => setCaptchaVerified(true)}
+              />
+
               <Button
                 type="submit"
                 className="w-full"
-                disabled={loading}
+                disabled={loading || !captchaVerified}
               >
                 {loading ? "Processing..." : isLogin ? "Sign In" : "Sign Up"}
               </Button>
@@ -215,7 +232,7 @@ export default function Auth() {
             <div className="mt-4 text-center text-sm">
               <button
                 type="button"
-                onClick={() => setIsLogin(!isLogin)}
+                onClick={() => { setIsLogin(!isLogin); setCaptchaVerified(false); setCaptchaKey(k => k + 1); }}
                 className="text-primary hover:underline"
               >
                 {isLogin
