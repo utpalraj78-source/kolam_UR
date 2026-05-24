@@ -52,7 +52,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
             <Zap className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold gradient-text">Kolam FHSS</span>
+            <span className="text-xl font-bold gradient-text">KolamBasedCommunication</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ShieldAlert, FileSignature, Info, Copyright } from "lucide-react";
+import { Github, Linkedin, Mail, ShieldAlert, FileSignature, Copyright } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -12,7 +12,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative w-full border-t border-muted/20 bg-background/20 backdrop-blur-sm py-10 mt-auto overflow-hidden z-10">
+    <footer className="relative w-full border-t border-border/50 bg-background/95 backdrop-blur-md py-10 overflow-hidden z-10">
       {/* Decorative background glow */}
       <div className="absolute -top-24 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -22,10 +22,7 @@ export const Footer = () => {
           
           {/* Creator Intro */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-              <h4 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Developer</h4>
-            </div>
+            <h4 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Developer</h4>
             <div className="space-y-3">
               <p className="text-xl font-extrabold tracking-tight gradient-text">Utpal Raj</p>
               <div className="flex gap-3">
@@ -60,12 +57,9 @@ export const Footer = () => {
 
           {/* Platform Info / About */}
           <div className="space-y-4 md:text-center flex flex-col md:items-center">
-            <div className="flex items-center gap-2 justify-center">
-              <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
-              <h4 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Platform</h4>
-            </div>
+            <h4 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Platform</h4>
             <div className="space-y-2">
-              <p className="text-sm font-medium text-foreground">Kolam FHSS & O-RAN Simulator</p>
+              <p className="text-sm font-medium text-foreground">KolamBasedCommunication & O-RAN Simulator</p>
               <p className="text-xs text-muted-foreground max-w-xs">
                 A high-fidelity simulation engine validating hybrid control planes and low-PHY digital signal processing.
               </p>
@@ -74,10 +68,7 @@ export const Footer = () => {
 
           {/* Legal / Copyright */}
           <div className="space-y-4 md:text-right flex flex-col md:items-end">
-            <div className="flex items-center gap-2 justify-end">
-              <span className="h-1.5 w-1.5 rounded-full bg-violet-500 animate-pulse" />
-              <h4 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Legal & Compliance</h4>
-            </div>
+            <h4 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Legal & Compliance</h4>
             <div className="flex flex-col gap-2 text-xs">
               {/* Terms and Conditions Dialog */}
               <Dialog>
@@ -97,21 +88,21 @@ export const Footer = () => {
                       <div className="space-y-2">
                         <h5 className="font-bold text-foreground">1. Acceptance of Terms</h5>
                         <p className="text-muted-foreground text-xs leading-relaxed">
-                          By accessing, viewing, or interacting with the Kolam FHSS Simulation Platform, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the platform.
+                          By accessing, viewing, or interacting with the KolamBasedCommunication Simulation Platform, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the platform.
                         </p>
                       </div>
 
                       <div className="space-y-2">
                         <h5 className="font-bold text-foreground">2. Simulation Scope & Sandbox Purpose</h5>
                         <p className="text-muted-foreground text-xs leading-relaxed">
-                          The Kolam FHSS simulator, including its high-fidelity C++ vector processing kernels, adaptive frequency hopping simulations, and captcha algorithms, is designed solely for demonstration, testing, and research environments. Any deployment in production telco environments is done at the operator's own risk.
+                          The KolamBasedCommunication simulator, including its high-fidelity C++ vector processing kernels, adaptive frequency hopping simulations, and captcha algorithms, is designed solely for demonstration, testing, and research environments. Any deployment in production telco environments is done at the operator's own risk.
                         </p>
                       </div>
 
                       <div className="space-y-2">
                         <h5 className="font-bold text-foreground">3. Intellectual Property Rights</h5>
                         <p className="text-muted-foreground text-xs leading-relaxed">
-                          All source code, visual interfaces, compilation scripts, and structural documentation of Kolam FHSS are owned by Utpal Raj and protected under standard copyright laws. Unauthorized replication, redistribution, or packaging without written consent is strictly prohibited.
+                          All source code, visual interfaces, compilation scripts, and structural documentation of KolamBasedCommunication are owned by Utpal Raj and protected under standard copyright laws. Unauthorized replication, redistribution, or packaging without written consent is strictly prohibited.
                         </p>
                       </div>
 
@@ -144,7 +135,7 @@ export const Footer = () => {
                       <div className="space-y-2">
                         <h5 className="font-bold text-foreground">1. Privacy and Telemetry</h5>
                         <p className="text-muted-foreground text-xs leading-relaxed">
-                          Kolam FHSS respects your privacy. All computation logs, audio visualizations, security drills, and mock transaction databases run entirely within your local browser context or sandboxed container. No sensitive telemetry or identifiers are forwarded to any third-party clouds.
+                          KolamBasedCommunication respects your privacy. All computation logs, audio visualizations, security drills, and mock transaction databases run entirely within your local browser context or sandboxed container. No sensitive telemetry or identifiers are forwarded to any third-party clouds.
                         </p>
                       </div>
 
@@ -168,7 +159,7 @@ export const Footer = () => {
             </div>
             
             <p className="text-xs text-muted-foreground/80 mt-1 flex items-center gap-1 md:justify-end">
-              <Copyright className="h-3 w-3" /> {currentYear} Kolam FHSS. All rights reserved.
+              <Copyright className="h-3 w-3" /> {currentYear} KolamBasedCommunication. All rights reserved.
             </p>
           </div>
 

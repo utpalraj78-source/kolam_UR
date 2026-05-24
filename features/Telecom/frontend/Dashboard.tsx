@@ -15,7 +15,7 @@ const TelecomDashboard = () => {
                     <Shield className="w-4 h-4" /> Secure Enterprise Communication
                 </div>
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-                    Why Choose <span className="text-primary">Kolam FHSS</span>?
+                    Why Choose <span className="text-primary">KolamBasedCommunication</span>?
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                     Outperform standard encryption with geometrically-derived frequency hopping.
@@ -78,7 +78,7 @@ const TelecomDashboard = () => {
                         <thead>
                             <tr className="border-b border-border">
                                 <th className="p-4 font-bold text-muted-foreground">Feature</th>
-                                <th className="p-4 font-bold text-primary text-lg">Kolam FHSS</th>
+                                <th className="p-4 font-bold text-primary text-lg">KolamBasedCommunication</th>
                                 <th className="p-4 font-bold text-muted-foreground">Standard AES-256</th>
                                 <th className="p-4 font-bold text-muted-foreground">Satellite Enc.</th>
                             </tr>

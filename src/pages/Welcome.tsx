@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Check, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
-
-import { Footer } from "@/components/Footer";
 
 const ParticleCanvas = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -90,7 +88,7 @@ const Welcome = () => {
       {/* Gradient glow background */}
       <div className="absolute inset-0 bg-gradient-glow opacity-50" />
 
-      <div className="relative z-10 container mx-auto px-6 pt-32 pb-16 flex-grow flex flex-col justify-center">
+      <div className="relative z-10 container mx-auto px-6 pt-32 pb-24 flex-grow flex flex-col justify-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -186,9 +184,140 @@ const Welcome = () => {
             </motion.div>
           ))}
         </motion.div>
-      </div>
 
-      <Footer />
+        {/* Attractive Plans Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-32 max-w-5xl mx-auto w-full"
+        >
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
+              Flexible Plans for Every <span className="gradient-text">Simulation Scale</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              From academic sandbox runs to enterprise-grade defense simulations, select a plan tailored to your bandwidth.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 items-stretch">
+            {/* Plan 1 */}
+            <div className="glass-card rounded-2xl p-8 flex flex-col justify-between border border-border/50 relative overflow-hidden transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-bold">Academic Sandbox</h3>
+                  <p className="text-xs text-muted-foreground mt-1">For learners and researchers</p>
+                </div>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-4xl font-extrabold">$0</span>
+                  <span className="text-xs text-muted-foreground">/ forever</span>
+                </div>
+                <hr className="border-border/50" />
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span>Core Kolam Generators</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span>Basic FHSS Analytics</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span>Community Documentation</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-8">
+                <Link to="/get-started" className="w-full block">
+                  <Button variant="outline" className="w-full py-5 font-semibold">Start Learning</Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Plan 2 - Recommended */}
+            <div className="glass-card rounded-2xl p-8 flex flex-col justify-between border-2 border-primary/50 relative overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 bg-muted/20">
+              <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-[10px] font-bold tracking-widest uppercase py-1 px-4 rounded-bl-xl">
+                Recommended
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-bold flex items-center gap-1.5">
+                    Professional Suite <Zap className="h-4 w-4 text-primary fill-primary flex-shrink-0" />
+                  </h3>
+                  <p className="text-xs text-muted-foreground mt-1">For telecom engineers & developers</p>
+                </div>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-4xl font-extrabold">$49</span>
+                  <span className="text-xs text-muted-foreground">/ month</span>
+                </div>
+                <hr className="border-border/50" />
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2 text-foreground font-medium">
+                    <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span>High-Fidelity C++ Vector Kernels</span>
+                  </li>
+                  <li className="flex items-center gap-2 text-foreground font-medium">
+                    <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span>Real-time BER & Collision Graphs</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span>License API Key Integration</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span>Standard Developer Support</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-8">
+                <Link to="/get-started" className="w-full block">
+                  <Button className="w-full py-5 font-semibold bg-gradient-primary border-0 text-white shadow-md shadow-primary/20">Upgrade Now</Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Plan 3 */}
+            <div className="glass-card rounded-2xl p-8 flex flex-col justify-between border border-border/50 relative overflow-hidden transition-all duration-300 hover:border-violet-500/30 hover:shadow-lg hover:shadow-violet-500/5">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-bold">Enterprise Defense</h3>
+                  <p className="text-xs text-muted-foreground mt-1">For mission-critical simulation</p>
+                </div>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-4xl font-extrabold">Custom</span>
+                </div>
+                <hr className="border-border/50" />
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-violet-500 flex-shrink-0" />
+                    <span>Full 6G Split-7.2x Simulation</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-violet-500 flex-shrink-0" />
+                    <span>Advanced AFH Algorithm Keys</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-violet-500 flex-shrink-0" />
+                    <span>Unlimited KCaptcha API Calls</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-violet-500 flex-shrink-0" />
+                    <span>24/7 Dedicated Support</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-8">
+                <Link to="/get-started" className="w-full block">
+                  <Button variant="outline" className="w-full py-5 font-semibold">Contact Sales</Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 };

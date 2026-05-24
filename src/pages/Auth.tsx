@@ -106,7 +106,7 @@ export default function Auth() {
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 mb-4">
             <Zap className="h-8 w-8 text-primary" />
-            <h1 className="text-3xl font-bold gradient-text">Kolam FHSS Platform</h1>
+            <h1 className="text-3xl font-bold gradient-text">KolamBasedCommunication Platform</h1>
           </div>
           <p className="text-muted-foreground">
             Secure frequency-hopping with mathematical beauty
