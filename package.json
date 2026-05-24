@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:backend": "python backend/run_backend.py",
+    "dev:backend": "C:\\Users\\Utpal\\anaconda3\\python.exe backend/run_backend.py",
     "dev:all": "concurrently \"npm run dev\" \"npm run dev:backend\"",
     "build": "vite build",
     "build:dev": "vite build --mode development",

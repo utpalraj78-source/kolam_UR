@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
-from backend.database import get_db
+from database import get_db
 from features.KolamCaptcha.backend.models import CaptchaChallenge
 from backend.kolam_generator import generate_kolam
 import random
