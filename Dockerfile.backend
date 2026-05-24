@@ -18,9 +18,9 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # 2. Install Python Dependencies
-# Using root requirements for simplicity in container
-COPY backend/requirements.txt ./requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt ./requirements.txt
+COPY backend/requirements.txt ./backend_requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -r backend_requirements.txt
 
 # 3. Copy Application Code
 COPY . .
