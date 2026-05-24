@@ -310,7 +310,7 @@ const Welcome = () => {
                 </ul>
               </div>
               <div className="pt-8">
-                <Link to="/get-started" className="w-full block">
+                <Link to="/reach-us" className="w-full block">
                   <Button variant="outline" className="w-full py-5 font-semibold">Contact Sales</Button>
                 </Link>
               </div>

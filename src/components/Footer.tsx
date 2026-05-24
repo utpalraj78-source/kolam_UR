@@ -70,6 +70,13 @@ export const Footer = () => {
           <div className="space-y-4 md:text-right flex flex-col md:items-end">
             <h4 className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">Legal & Compliance</h4>
             <div className="flex flex-col gap-2 text-xs">
+              {/* Reach Us Link */}
+              <a
+                href="/reach-us"
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1.5 md:justify-end font-medium"
+              >
+                <Mail className="h-3.5 w-3.5" /> Reach Us
+              </a>
               {/* Terms and Conditions Dialog */}
               <Dialog>
                 <DialogTrigger asChild>

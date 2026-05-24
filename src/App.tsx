@@ -27,6 +27,7 @@ import TelecomDocumentation from "@features/Telecom/frontend/admin/TelecomDocume
 import KCaptchaDocs from "@features/KolamCaptcha/frontend/Docs";
 import Payment from "@features/KolamCaptcha/frontend/Payment";
 import SecurityLab from "@features/SecurityLab/frontend";
+import ReachUs from "./pages/ReachUs";
 import { Footer } from "@/components/Footer";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
                 <Route path="/welcome" element={<Welcome />} />
                 <Route path="/get-started" element={<RoleSelection />} />
                 <Route path="/auth" element={<Auth />} />
+                <Route path="/reach-us" element={<ReachUs />} />
 
                 {/* Protected Routes */}
                 <Route path="/kolam-generator" element={<ProtectedRoute><KolamGenerator /></ProtectedRoute>} />
