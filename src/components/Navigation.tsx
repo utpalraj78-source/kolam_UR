@@ -56,7 +56,7 @@ export const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden xl:flex items-center gap-1">
             {filteredItems.map((item) => (
               <NavLink
                 key={item.to}
@@ -102,7 +102,7 @@ export const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="xl:hidden">
             <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(true)}>
               <Menu className="h-6 w-6" />
             </Button>
@@ -118,7 +118,7 @@ export const Navigation = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 md:hidden"
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 xl:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
             />
             <motion.div
@@ -126,7 +126,7 @@ export const Navigation = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed inset-y-0 right-0 w-[75%] bg-background border-l shadow-xl z-50 p-6 flex flex-col md:hidden"
+              className="fixed inset-y-0 right-0 w-[75%] bg-background border-l shadow-xl z-50 p-6 flex flex-col xl:hidden"
             >
               <div className="flex items-center justify-between mb-8">
                 <span className="text-xl font-bold gradient-text">Menu</span>

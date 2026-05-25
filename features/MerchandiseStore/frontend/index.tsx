@@ -62,25 +62,19 @@ const PRODUCTS = [
         name: "Premium Phone Case",
         image: "/merch/phone.png",
         overlayStyle: { top: "14%", left: "34%", width: "36%", height: "72%", borderRadius: "20px" },
-        type: "3d_obj",
-        modelPath: "/models/phone.obj",
-        scale_factor: 1.5,
-        decalPosition: [0, 0, -0.055], // Back face for camera side (assuming thickness ~0.1)
-        decalRotation: [0, Math.PI, 0], // Rotate decal to face outward from back
-        decalScale: 0.5,
+        type: "3d_box",
+        dimensions: [1.2, 2.4, 0.1],
+        radius: 0.1,
         price: "$24.99",
-        baseRotation: [0, Math.PI, 0] // Rotate model to show back by default
     },
     {
         id: "mug",
         name: "Ceramic Mug",
-        image: "/merch/mug.png", // Fallback / 2D view
+        image: "/merch/mug.png",
         overlayStyle: { top: "30%", left: "30%", width: "40%", height: "55%", borderRadius: "0 0 10px 10px" },
-        type: "3d_obj",
-        modelPath: "/models/mug.obj",
-        scale_factor: 1.0,
-        decalPosition: [0, 0.5, 0.5], // Estimated for mug surface
-        decalScale: 0.6,
+        type: "3d_cylinder",
+        dimensions: [0.8, 0.8, 2, 32],
+        radius: 0,
         price: "$14.99"
     },
     {
@@ -98,11 +92,9 @@ const PRODUCTS = [
         name: "Classic Tee",
         image: "/merch/tshirt.png",
         overlayStyle: { top: "20%", left: "30%", width: "40%", height: "50%" },
-        type: "3d_obj",
-        modelPath: "/models/tshirt.obj",
-        scale_factor: 0.02, // T-shirts are usually large updates
-        decalPosition: [0, 0, 0.5],
-        decalScale: 0.3,
+        type: "3d_box",
+        dimensions: [2, 2.5, 0.2],
+        radius: 0.1,
         price: "$29.99"
     },
 ];
@@ -203,7 +195,24 @@ const GeometryModel = ({ product, texture, scale, verticalOffset, horizontalOffs
             {product.type === "3d_cylinder" && (
                 <group rotation={[0, 0, 0]}>
                     <Cylinder args={product.dimensions}>
-                        <meshStandardMaterial color="white" />
+                        <meshStandardMaterial color="white" roughness={0.3} />
+                        <Decal
+                            position={[0 + horizontalOffset, 0 + verticalOffset, product.dimensions[0] + 0.001]}
+                            rotation={[0, 0, patternRotationZ]}
+                            scale={[
+                                product.dimensions[0] * 1.5 * (scale / 100),
+                                product.dimensions[2] * 0.6 * (scale / 100),
+                                0.1
+                            ]}
+                        >
+                            <meshBasicMaterial
+                                map={texture}
+                                polygonOffset
+                                polygonOffsetFactor={-1}
+                                transparent
+                                side={THREE.FrontSide}
+                            />
+                        </Decal>
                     </Cylinder>
                 </group>
             )}
