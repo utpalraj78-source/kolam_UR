@@ -48,20 +48,20 @@ export const Navigation = () => {
 
   return (
     <nav className="glass-card fixed top-0 left-0 right-0 z-50 border-b">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
+      <div className="container mx-auto px-4 py-3">
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2 cursor-pointer shrink-0" onClick={() => navigate("/")}>
             <Zap className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold gradient-text">KolamBasedCommunication</span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden xl:flex items-center gap-1">
+          <div className="hidden lg:flex flex-wrap items-center justify-end gap-1 flex-1 ml-4">
             {filteredItems.map((item) => (
               <NavLink
                 key={item.to}
                 to={item.to}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 hover:bg-muted/50"
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg transition-all duration-200 hover:bg-muted/50 text-sm whitespace-nowrap"
                 activeClassName="bg-muted text-primary font-medium"
                 onClick={(e) => {
                   if (item.protected && !user) {
@@ -70,8 +70,8 @@ export const Navigation = () => {
                   }
                 }}
               >
-                <item.icon className="h-4 w-4" />
-                <span className="hidden lg:inline">{item.label}</span>
+                <item.icon className="h-4 w-4 shrink-0" />
+                <span>{item.label}</span>
               </NavLink>
             ))}
 
@@ -83,26 +83,26 @@ export const Navigation = () => {
                 }}
                 variant="outline"
                 size="sm"
-                className="ml-2 flex items-center gap-2"
+                className="ml-2 flex items-center gap-2 whitespace-nowrap"
               >
-                <LogOut className="h-4 w-4" />
-                <span className="hidden lg:inline">Sign Out</span>
+                <LogOut className="h-4 w-4 shrink-0" />
+                <span>Sign Out</span>
               </Button>
             ) : (
               <Button
                 onClick={() => navigate("/get-started")}
                 variant="default"
                 size="sm"
-                className="ml-2 flex items-center gap-2"
+                className="ml-2 flex items-center gap-2 whitespace-nowrap"
               >
-                <LogIn className="h-4 w-4" />
-                <span className="hidden lg:inline">Get Started</span>
+                <LogIn className="h-4 w-4 shrink-0" />
+                <span>Get Started</span>
               </Button>
             )}
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="xl:hidden">
+          <div className="lg:hidden shrink-0">
             <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(true)}>
               <Menu className="h-6 w-6" />
             </Button>
@@ -118,7 +118,7 @@ export const Navigation = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 xl:hidden"
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
             />
             <motion.div
@@ -126,31 +126,31 @@ export const Navigation = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed inset-y-0 right-0 w-[75%] bg-background border-l shadow-xl z-50 p-6 flex flex-col xl:hidden"
+              className="fixed inset-y-0 right-0 w-[85%] sm:w-[60%] bg-background border-l shadow-xl z-50 flex flex-col lg:hidden"
             >
-              <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center justify-between p-6 pb-4 border-b">
                 <span className="text-xl font-bold gradient-text">Menu</span>
                 <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
                   <X className="h-6 w-6" />
                 </Button>
               </div>
 
-              <div className="flex flex-col gap-2 flex-1 overflow-y-auto">
+              <div className="flex flex-col gap-2 flex-1 overflow-y-auto p-6">
                 {filteredItems.map((item) => (
                   <NavLink
                     key={item.to}
                     to={item.to}
-                    className="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 hover:bg-muted/50 text-lg"
+                    className="flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 hover:bg-muted/50 text-base"
                     activeClassName="bg-muted text-primary font-bold"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    <item.icon className="h-5 w-5" />
+                    <item.icon className="h-5 w-5 shrink-0" />
                     <span>{item.label}</span>
                   </NavLink>
                 ))}
               </div>
 
-              <div className="pt-6 border-t mt-auto">
+              <div className="p-6 border-t mt-auto bg-background">
                 {user ? (
                   <Button
                     onClick={() => {
@@ -161,7 +161,7 @@ export const Navigation = () => {
                     variant="destructive"
                     className="w-full flex items-center justify-center gap-2"
                   >
-                    <LogOut className="h-5 w-5" />
+                    <LogOut className="h-5 w-5 shrink-0" />
                     Sign Out
                   </Button>
                 ) : (
@@ -173,7 +173,7 @@ export const Navigation = () => {
                     variant="default"
                     className="w-full flex items-center justify-center gap-2"
                   >
-                    <LogIn className="h-5 w-5" />
+                    <LogIn className="h-5 w-5 shrink-0" />
                     Get Started
                   </Button>
                 )}
