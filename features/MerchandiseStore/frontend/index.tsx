@@ -535,44 +535,51 @@ const MerchandiseStore = () => {
                                 className="relative w-full aspect-[4/3] bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-inner overflow-hidden border border-border/40 flex-1"
                             >
                                 {effectiveViewMode === "3d" ? (
-                                    <ErrorBoundary fallback={
-                                        <div className="flex flex-col items-center justify-center h-full text-center p-6 text-muted-foreground">
-                                            <Rotate3d className="w-12 h-12 mb-4 opacity-20" />
-                                            <p className="font-semibold">3D Rendering Unavailable</p>
-                                            <p className="text-sm">Your browser or device does not support WebGL.</p>
-                                            <Button variant="outline" size="sm" className="mt-4" onClick={() => setViewMode('2d')}>
-                                                Switch to 2D View
-                                            </Button>
+                                    <>
+                                        <ErrorBoundary fallback={
+                                            <div className="flex flex-col items-center justify-center h-full text-center p-6 text-muted-foreground">
+                                                <Rotate3d className="w-12 h-12 mb-4 opacity-20" />
+                                                <p className="font-semibold">3D Rendering Unavailable</p>
+                                                <p className="text-sm">Your browser or device does not support WebGL.</p>
+                                                <Button variant="outline" size="sm" className="mt-4" onClick={() => setViewMode('2d')}>
+                                                    Switch to 2D View
+                                                </Button>
+                                            </div>
+                                        }>
+                                            <Canvas
+                                                shadows={false}
+                                                dpr={1}
+                                                camera={{ fov: 45, position: [0, 0, 4] }}
+                                                gl={{
+                                                    preserveDrawingBuffer: true,
+                                                    powerPreference: "default",
+                                                    antialias: true,
+                                                    failIfMajorPerformanceCaveat: false
+                                                }}
+                                            >
+                                                <Suspense fallback={<Html center><div className="text-muted-foreground font-bold whitespace-nowrap">Loading 3D Model...</div></Html>}>
+                                                    <Stage environment="city" intensity={0.6}>
+                                                        {kolamUrl && (
+                                                            <Product3D
+                                                                product={selectedProduct}
+                                                                textureUrl={kolamUrl}
+                                                                scale={scale}
+                                                                verticalOffset={verticalOffset}
+                                                                horizontalOffset={horizontalOffset}
+                                                                layoutType={layoutType}
+                                                            />
+                                                        )}
+                                                    </Stage>
+                                                    <OrbitControls makeDefault enableZoom={true} />
+                                                </Suspense>
+                                            </Canvas>
+                                        </ErrorBoundary>
+                                        <div className="absolute bottom-2 left-0 right-0 flex justify-center pointer-events-none z-10 px-2">
+                                            <span className="text-[10px] text-muted-foreground/80 bg-background/50 backdrop-blur-md px-3 py-1 rounded-full text-center border border-border/50 shadow-sm">
+                                                * Note: 3D models are for visualization. The physical product may vary slightly as it is in development.
+                                            </span>
                                         </div>
-                                    }>
-                                        <Canvas
-                                            shadows={false}
-                                            dpr={1}
-                                            camera={{ fov: 45, position: [0, 0, 4] }}
-                                            gl={{
-                                                preserveDrawingBuffer: true,
-                                                powerPreference: "default",
-                                                antialias: true,
-                                                failIfMajorPerformanceCaveat: false
-                                            }}
-                                        >
-                                            <Suspense fallback={<Html center><div className="text-muted-foreground font-bold whitespace-nowrap">Loading 3D Model...</div></Html>}>
-                                                <Stage environment="city" intensity={0.6}>
-                                                    {kolamUrl && (
-                                                        <Product3D
-                                                            product={selectedProduct}
-                                                            textureUrl={kolamUrl}
-                                                            scale={scale}
-                                                            verticalOffset={verticalOffset}
-                                                            horizontalOffset={horizontalOffset}
-                                                            layoutType={layoutType}
-                                                        />
-                                                    )}
-                                                </Stage>
-                                                <OrbitControls makeDefault enableZoom={true} />
-                                            </Suspense>
-                                        </Canvas>
-                                    </ErrorBoundary>
+                                    </>
                                 ) : (
                                     // 2D View
                                     <div className="relative w-full h-full flex items-center justify-center">
