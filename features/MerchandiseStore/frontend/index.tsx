@@ -569,7 +569,7 @@ const MerchandiseStore = () => {
                                                         />
                                                     )}
                                                 </Stage>
-                                                <OrbitControls makeDefault autoRotate autoRotateSpeed={2.0} enableZoom={true} />
+                                                <OrbitControls makeDefault enableZoom={true} />
                                             </Suspense>
                                         </Canvas>
                                     </ErrorBoundary>
