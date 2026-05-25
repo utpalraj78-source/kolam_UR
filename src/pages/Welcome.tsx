@@ -133,13 +133,13 @@ const Welcome = () => {
               </Button>
             </Link>
 
-            <Link to="/frequency-hopping">
+            <Link to="/reach-us">
               <Button
                 size="lg"
                 variant="outline"
                 className="glass-card border-2 px-8 py-6 text-lg hover:bg-muted/30"
               >
-                View Analytics
+                Reach Us
               </Button>
             </Link>
           </motion.div>
