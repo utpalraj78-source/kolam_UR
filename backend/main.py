@@ -93,10 +93,16 @@ app = FastAPI(
 allowed_origins_env = os.getenv("ALLOWED_ORIGINS", "*")
 origins = allowed_origins_env.split(",")
 
+# FastAPI crashes if we use ["*"] with allow_credentials=True. 
+# So we dynamically disable credentials if wildcard is used.
+allow_creds = True
+if "*" in origins:
+    allow_creds = False
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins, 
-    allow_credentials=True,
+    allow_credentials=allow_creds,
     allow_methods=["*"],
     allow_headers=["*"],
 )
