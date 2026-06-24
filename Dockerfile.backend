@@ -30,7 +30,6 @@ COPY . .
 RUN make all || echo "Warning: Makefile failed, proceeding with pure python..."
 
 # 5. Runtime Configuration
-EXPOSE 8081
 ENV ENV=production
 ENV PYTHONPATH=/app/backend:/app
 
